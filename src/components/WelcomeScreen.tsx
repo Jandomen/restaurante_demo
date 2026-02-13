@@ -24,8 +24,12 @@ export const WelcomeScreen = ({ onEnter }: WelcomeScreenProps) => {
             <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-amber-500/10 rounded-full blur-[120px] animate-pulse shadow-2xl"></div>
 
             <div className="relative z-10 flex flex-col items-center text-center px-6">
-                <div className="w-24 h-24 bg-gradient-to-tr from-orange-500 to-amber-400 rounded-[2.5rem] flex items-center justify-center text-white shadow-[0_0_50px_rgba(249,115,22,0.3)] mb-10 animate-in zoom-in-50 duration-1000">
-                    <UtensilsCrossed size={48} strokeWidth={2.5} />
+                <div className="w-full max-w-[480px] mb-14 animate-in zoom-in-50 duration-1000">
+                    <img
+                        src="/logo.png"
+                        alt="GastroManager Logo"
+                        className="w-full h-auto object-contain drop-shadow-[0_0_50px_rgba(249,115,22,0.5)] scale-125"
+                    />
                 </div>
 
                 <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4 animate-in slide-in-from-bottom-8 duration-700 fill-mode-both">
