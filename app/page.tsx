@@ -157,8 +157,8 @@ const Dashboard = () => {
       {/* Mobile Top Bar */}
       <div className="lg:hidden bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-gradient-to-tr from-orange-500 to-amber-400 rounded-lg flex items-center justify-center text-white shadow-md">
-            <UtensilsCrossed size={16} strokeWidth={2.5} />
+          <div className="w-24 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm overflow-hidden p-1">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-lg font-black tracking-tight text-slate-900">GastroManager</h1>
         </div>
@@ -173,13 +173,13 @@ const Dashboard = () => {
 
       {/* Sidebar */}
       <aside className={`fixed left-0 top-0 h-full w-72 bg-white border-r border-slate-200/60 p-8 z-[70] transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0 overflow-y-auto custom-scrollbar'} lg:block`}>
-        <div className="hidden lg:flex items-center gap-3 mb-12 px-2">
-          <div className="w-11 h-11 bg-gradient-to-tr from-orange-500 to-amber-400 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-100">
-            <UtensilsCrossed size={22} strokeWidth={2.5} />
+        <div className="hidden lg:flex flex-col gap-4 mb-14 px-2">
+          <div className="w-full max-w-[200px] h-20 bg-white rounded-[1.5rem] flex items-center justify-center shadow-xl shadow-slate-200/40 border border-slate-100 overflow-hidden p-2">
+            <img src="/logo.png" alt="GastroManager Logo" className="w-full h-full object-contain scale-110" />
           </div>
           <div>
-            <h1 className="text-xl font-black tracking-tight text-slate-900">GastroManager</h1>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Restaurante Pro</p>
+            <h1 className="text-2xl font-black tracking-tight text-slate-900 leading-none">GastroManager</h1>
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-orange-500 mt-1">Premium SaaS</p>
           </div>
         </div>
 
